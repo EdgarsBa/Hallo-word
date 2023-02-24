@@ -1,0 +1,2 @@
+# Hallo-word
+Uzdevums datorikā, ok?, Šis ir tikai tests, ja gribi kautko foršu rtedzēt :), uzspied uz saites: https://www.youtube.com/watch?v=dQw4w9WgXcQ
