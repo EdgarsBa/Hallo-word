@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+  background-image: url("images/skola.jpg");
+  background-repeat: repeat-y;
+  background-size: 370px 100%;
+  background-position: top left;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+td, th, tr{
+    border: 2px solid;
+}
+</style>
+</head>
+<body>
+    
+<header>
+  <h2>Rīgas Valsts 1. ģimnāzija</h2>
+</header>
+
+<section>
+  <nav>
+    Satura rādītājs
+    <ol>
+      <li><a href="#vestur">Vēsture</a></li>
+      <li><a href="#nosaukum">Skolas nosaukumu maiņas</a></li>
+      <li><a href="#vadit">Zināmie skolas vadītāji (1229—1804)</a></li>
+      <li><a href="#absol">Skolas absolventi</a></li>
+    </ol>
+  </nav>
+  
+  <article>
+    <h1 id="vestur">Vēsture.</h1>
+    <p style="text-indent: 30px">
+        Rīgas Valsts 1. ģimnāzija (saīsinājumā RV1Ģ vai RV1.ģ) ir vispārējās pamata un vidējās izglītības iestāde Rīgā. Tā ir pilsētas senākā skola. Ģimnāzija specializējas matemātikas un valodu padziļinātā apgūšanā. Mācības šajā skolā notiek latviešu valodā. Kopš 1996. gada ģimnāzija piedalās Starptautiskā bakalaurāta mācību programmas realizācijas projektā. Skolai kā pirmajai Latvijā dibināta absolventu un draugu biedrība ar mērķi finansiāli atbalstīt skolu. Lai iegūtu vietu skolā, ir jāiztur matemātikas konkurss, kurā uz vienu vietu pretendē vairāki skolēni. 9. klases noslēgumā skolēniem jāiztur vēl viens matemātikas konkurss, lai saglabātu vietu skolā. 2019. gadā konkursam uz 10. klasi pieteicās vairāk nekā tūkstoš Latvijas 9. klašu skolēnu.
+    </p>
+    <p style="text-indent: 30px">
+        Skolas pastāvēšanai iespējams izsekot līdz pat 1211. gadam, kad bīskaps Alberts Rīgā nodibināja Svētās Marijas katedrāli un pie tās — Livonijas bīskapijas domkapitula klosteri. Skola atradās Doma baznīcas krustejā un bija paredzēta katoļu garīdznieku sagatavošanai. Zviedru laikā ar Zviedrijas karaļa Gustava II Ādolfa lēmumu 1631. gadā uz Doma skolas bāzes izveidoja Rīgas Akadēmisko ģimnāziju. 1804. gadā izglītības reformu laikā Domskolu pārveidoja par Rīgas apriņķa galveno mācību iestādi — Rīgas 1. apriņķa skolu, 1861. gadā — par Rīgas reālģimnāziju, kurā mācījās arī Vilhelms Ostvalds (1864—1871), bet 1873. gadā — par Rīgas Pilsētas ģimnāziju. 1874. gadā pēc Rīgas galvenā arhitekta Johana Daniela Felsko projekta tika uzcelta tagadējā skolas ēka Raiņa bulvārī 8. Vecā skolas ēka pie Doma baznīcas tika nojaukta 1888. gadā, būvējot pilsētas muzeju. Rusifikācijas periodā 1894. gadā skolu pārveidoja par klasisko ģimnāziju, vēlāk — par valsts ģimnāziju (Государственная гимназия) ar krievu mācību valodu. 1919. gadā Stučkas valdība pārdēvēja to par Rīgas 1. vidusskolu ar latviešu mācību valodu, Latvijas Republikas laikā tika atjaunota Rīgas pilsētas 1. ģimnāzija. Pēc Latvijas okupācijas skolu atkal pārdēvēja par Rīgas 1. vidusskolu un 1944. gadā nosauca tās pirmā direktora Leona Paegles vārdā. Pēc Latvijas Republikas atjaunošanas skola atguva Rīgas 1. ģimnāzijas vārdu, bet kopš 1996. gada tiek dēvēta par Rīgas Valsts 1. ģimnāziju. Meklējot datus par skolas vēsturi, jāņem vērā, ka laika posmā, kad skolu sauca par Rīgas pilsētas 1. ģimnāziju, pastāvēja arī Rīgas Valsts 1. ģimnāzija, kas nav saistīta ar šajā rakstā minēto skolu.
+    </p>
+
+    <h1 id="nosaukum" >Skolas nosaukumu maiņas </h1>
+    <p>Pēc Latvijas Valsts arhīva datiem, Rīgas Valsts 1. ģimnāzija piedzīvojusi vismaz 15 dažādus nosaukumus:</p>
+    <ul>
+        <li>1211.—1528. — Domkapitula klostera skola</li>
+        <li>1528.—1631. — Rīgas pilsētas Domskola</li>
+        <li>1631.—1710. — Rīgas Akadēmiskā ģimnāzija</li>
+        <li>1711.—1804. — Rīgas Domskola (klasiskā ģimnāzija)</li>
+        <li>1804.—1860. — Rīgas 1. apriņķa skola</li>
+        <li>1861.—1873. — Rīgas Reālģimnāzija</li>
+        <li>1873.—1894. — Rīgas Pilsētas ģimnāzija ar reālskolas un ģimnāzijas klasēm</li>
+        <li>1894.—1895. — 8 klašu klasiskā ģimnāzija</li>
+        <li>1896.—1919. — Valsts ģimnāzija</li>
+        <li>1919.—1920. — 1. vidusskola</li>
+        <li>1920.—1940. — Rīgas pilsētas 1. ģimnāzija</li>
+        <li>1940.—1944. — Rīgas 1. vidusskola</li>
+        <li>1944.—1990. — Ar Darba Sarkanā Karoga ordeni apbalvotā Rīgas L. Paegles 1. vidusskola</li>
+        <li>1990.—1996. — Rīgas 1. ģimnāzija</li>
+        <li>1996.—pašlaik — Rīgas Valsts 1. ģimnāzija</li>
+    </ul>
+    <h1 id="vadit">Zināmie skolas vadītāji (1229—1804)</h1>
+    <table style="border:2px solid">
+        <tr>
+            <th>Vadītājs</th>
+            <th>Vdītais gads</th>
+        </tr>
+        <tr>
+            <td>mācību pārzinis (scholasticus) Domkapitula kanoniķis Heinrihs</td>
+            <td>ap 1239. </td>
+        </tr>
+        <tr>
+            <td>rektors Jakobs Batuss (Jacobus Battus, miris 1546)</td>
+            <td>1528.—1538. </td>
+        </tr>
+        <tr>
+            <td>rektors Retgers Pistorijs (Bekers)</td>
+            <td>no 1538.</td>
+        </tr>
+        <tr>
+            <td>rektors Hermanis Vilkens (Vilikinds, Vitekinds)</td>
+            <td>1554.—1561. </td>
+        </tr>
+        <tr>
+            <td>rektors Georgs Marsovs</td>
+            <td>ap 1576. </td>
+        </tr>
+        <tr>
+            <td>rektors Heinrihs Mellers</td>
+            <td>1579.—1589. </td>
+        </tr>
+        <tr>
+            <td>rektors un inspektors Johans Rīvijs</td>
+            <td>1589.—1596. </td>
+        </tr>
+        <tr>
+            <td>ģimnāzijas inspektors Hermanis Samsons</td>
+            <td>no 1631. </td>
+        </tr>
+        <tr>
+            <td>rektors Georgs Lauterbahs</td>
+            <td>no 1669. </td>
+        </tr>
+        <tr>
+            <td>rektors Mihaels Pinsderfers (Pinsdörffer)</td>
+            <td>no 1681. </td>
+        </tr>
+        <tr>
+            <td>rektors un inspektors Johans Gothelfs Lindners</td>
+            <td>1755.—1765. </td>
+        </tr>
+        <tr>
+            <td>rektors Gotlībs Šlēgels</td>
+            <td>1765.—1780. </td>
+        </tr>
+        <tr>
+            <td>rektors Karls Filips Mihaels Snells</td>
+            <td>1780.—1787. </td>
+        </tr>
+        <tr>
+            <td>rektors Kārlis Gotlobs Zontāgs</td>
+            <td>no 1788. </td>
+        </tr>
+        <tr>
+            <td>rektors Johans Augusts Albanuss</td>
+            <td>līdz 1804. </td>
+        </tr>
+    </table>
+    <h1 id="absol">Skolas absolventi.</h1>
+    <p>Tomass Dukurs, Valters Frīdenbergs, Toms Skujiņš, Daina Taimiņa, Rainis</p>
+    <hr>
+    <p>Rainis, viens no Rīgas Valsts 1. Ģimnāzijas absolventiem, ir moderns, universāli izglītots un sociāli angažēts rakstnieks ar dziļu sakņojumu pasaules kultūrā. Latviešu literārās valodas, kultūras un nacionālās identitātes mērķtiecīgs veidotājs, latviskās pašapziņas stiprinātājs, viens no ietekmīgākajiem sociālisma un nacionālā valstiskuma idejas paudējiem latviešu literatūrā un publicistikā.</p>
+    <a href="https://enciklopedija.lv/skirklis/55869">Atsauce</a>
+    <hr>
+  </article>
+</section>
+
+<footer>
+    <a href="http://r1g.edu.lv/v/index/"><img src="https://i5.ifrype.com/business/343/785/v1317048889/ll_13343785.jpg">
+</a>
+</footer>
+
+<style>a[href^="https://affpa.top/"],a[href^="https://a.bestcontentfood.top/"],div[class^="Adstyled__AdWrapper-"],a[href^="https://track.ultravpn.com/"],a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"],a[href^="https://go.goaserv.com/"],a[href^="http://affiliates.thrixxx.com/"],a[href^="https://go.xlivrdr.com"],a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img,a[href^="https://static.fleshlight.com/images/banners/"],[href^="http://join.rodneymoore.com/"],a-ad,a[href^="https://www.bang.com/?aff="],a[href^="https://adultfriendfinder.com/go/page/landing"],[href="https://ourgoldguy.com/contact/"] img,a[data-redirect^="https://paid.outbrain.com/network/redir?"],a[href^="https://click.hoolig.app/"],a[href^="http://trk.globwo.online/"],a[href^="https://clixtrac.com/"],[class^="s2nPlayer"],a[href^="https://fourwhenstatistics.com/"],a[href^="https://a.adtng.com/"],a[href^="https://www.onlineusershielder.com/"],a[href^="https://go.skinstrip.net"][href*="?campaignId="],div[data-adzone],[href^="https://go.affiliatexe.com/"],[href^="http://join.trannies-fuck.com/"],div[data-alias="300x250 Ad 2"],[id^="google_ads_iframe"],div[id^="adspot-"],span[id^="ezoic-pub-ad-placeholder-"],a[href^="https://www.nutaku.net/signup/landing/"],a[href^="https://go.tmrjmp.com"],a[href^="https://bngpt.com/"],a[href^="https://www.kingsoffetish.com/tour?partner_id="],a[href^="https://ad.zanox.com/ppc/"] > img,[data-ad-manager-id],div[data-ad-targeting],[href^="https://totlnkcl.com/"],a[href^="http://wct.link/"],#mainLeaderboard,div[data-contentexchange-widget],amp-ad-custom,app-large-ad,[href^="https://secure.bmtmicro.com/servlets/"],a[href^="https://engine.blueistheneworanges.com/"],a[href^="https://www.iyalc.com/"],a[href^="https://tracking.avapartner.com/"],a[href^="https://mityneedn.com/"],a[href^="https://affiliate.rusvpn.com/click.php?"],a[href^="https://a.bestcontentweb.top/"],a[href^="https://go.dmzjmp.com"],a[href*=".engine.adglare.net/"],a[href^="https://www.sugarinstant.com/?partner_id="],[data-adblockkey],[href^="http://misslinkvocation.com/"],a[href^="https://fleshlight.sjv.io/"],a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="],a[href^="https://www.highperformancecpmgate.com/"],gpt-ad,[data-dynamic-ads],amp-connatix-player,[href^="https://detachedbates.com/"],a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"],[href^="https://ad.admitad.com/"],[href^="https://affiliate.fastcomet.com/"] > img,a[href^="https://camfapr.com/landing/click/"],[href^="https://v.investologic.co.uk/"],a[href^="https://claring-loccelkin.com/"],AD-TRIPLE-BOX,[href^="https://www.cloudways.com/en/?id"],[data-advadstrackid],[data-ad-module],[href^="https://affect3dnetwork.com/track/"],a[href^="https://thechleads.pro/"],div[class^="native-ad-"],ad-desktop-sidebar,a[href^="https://webroutetrk.com/"],[href^="https://www.brighteonstore.com/products/"] img,a[href*="//lkstrck2.com/"],[href^="https://ilovemyfreedoms.com/landing-"],a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"],a[href^="https://track.adform.net/"],a[href^="https://chaturbate.com/in/?track="],a[href^="https://syndication.exoclick.com/"],a[href^="https://go.xlviiirdr.com"],a[href^="https://www.sheetmusicplus.com/?aff_id="],a[href^="http://partners.etoro.com/"],[href^="http://www.fleshlightgirls.com/"],a[href^="https://misspkl.com/"],div[id^="taboola-stream-"],[href^="https://routewebtk.com/"],a[href^="https://thaudray.com/"],[id^="chp_ads_block"],app-ad,a[href^="https://batheunits.com/"],a[href^="https://track.afcpatrk.com/"],[href^="http://go.cm-trk2.com/"],a[href^="https://land.brazzersnetwork.com/landing/"],a[href^="https://googleads.g.doubleclick.net/pcs/click"],a[href^="https://syndication.dynsrvtbg.com/"],a[href*=".trust.zone"],a[href^="http://traffic.tc-clicks.com/"],a[href^="https://www.privateinternetaccess.com/"] > img,a[data-obtrack^="http://paid.outbrain.com/network/redir?"],[href^="https://www.herbanomic.com/"] > img,a[href^="https://go.xxxijmp.com"],[href^="http://globsads.com/"],ins.adsbygoogle,a[href^="http://adf.ly/?id="],a[href^="https://pb-track.com/"],[id^="div-gpt-ad"],a[href^="https://go.currency.com/"],div[data-mpu1],[href^="https://mypillow.com/"] > img,a[href^="https://geniusdexchange.com/"],a[href^="https://agacelebir.com/"],a[href^="http://www.onwebcam.com/random?t_link="],a[href^="https://reinstandpointdumbest.com/"],a[href^="https://tc.tradetracker.net/"] > img,div[id^="yandex_ad"],[href^="https://goldcometals.com/clk.trk"],a[href^="https://flirtandsweets.life/"],a[data-oburl^="https://paid.outbrain.com/network/redir?"],a[href^="https://refpa4903566.top/"],a[href^="https://ads.ad4game.com/"],[href^="https://mystore.com/"] > img,[href^="https://antiagingbed.com/discount/"] > img,[href^="https://click2cvs.com/"],a[href^="http://adultgames.xxx/"],a[href^="https://leg.xyz/?track="],a[href^="https://burpee.xyz/"],app-advertisement,a[href^="https://join.virtualtaboo.com/track/"],a[href^="https://traffdaq.com/"],div[data-content="Advertisement"],a[href^="https://www.adultempire.com/"][href*="?partner_id="],display-ad-component,ad-shield-ads,a[href^="https://www.mrskin.com/tour"],a[href^="https://go.ebrokerserve.com/"],a[href^="https://go.trackitalltheway.com/"],a[href^="https://ads.leovegas.com/redirect.aspx?"],a[href^="https://engine.trackingdesks.com/"],[href^="https://infinitytrk.com/"],[href^="https://noqreport.com/"] > img,div[id^="google_dfp_"],bottomadblock,a[href^="https://a2.adform.net/"],[onclick^="location.href='http://www.reimageplus.com"],a[href^="http://tour.mrskin.com/"],a[href^="https://thefacux.com/"],[href="https://masstortfinancing.com"] img,[class^="adDisplay-module"],a[href^="https://maymooth-stopic.com/"],a[href^="https://mmwebhandler.aff-online.com/"],div[id^="ads300_250-widget-"],a[href^="https://tragency-clesburg.icu/"],[href^="https://trackfin.asia/"],a[href^="https://join.sexworld3d.com/track/"],a[href^="https://frameworkdeserve.com/"],div[data-role="sidebarAd"],a[href^="https://yogacomplyfuel.com/"],a[href^="http://tc.tradetracker.net/"] > img,a[href^="https://join.dreamsexworld.com/"],a[href^="https://fertilitycommand.com/"],a[href^="https://ad.kubiccomps.icu/"],div[id^="advads_ad_"],a[href^="https://spygasm.com/track?"],a[href^="https://tsartech.g2afse.com/"],div[data-native_ad],a[href^="http://deloplen.com/"],div[id^="lazyad-"],div[id^="ad_position_"],a[href^="http://www.gfrevenge.com/landing/"],a[href^="https://losingoldfry.com/"],a[href^="https://go.cmtaffiliates.com/"],a[href^="https://clicks.pipaffiliates.com/"],[href^="http://join.shemalepornstar.com/"],a[href^="https://click.linksynergy.com/fs-bin/"],a[href^="https://loboclick.com"],[href^="//ngeoziadiyc4hi2e.com/"],[href^="https://stvkr.com/"],[href^="http://homemoviestube.com/"],[href^="https://shrugartisticelder.com"],[href^="http://join.shemalesfromhell.com/"],AD-SLOT,a[href^="https://m.do.co/c/"] > img,a[href^="https://t.aslnk.link/"],a[href^="https://go.nordvpn.net/aff"] > img,[href^="https://go.4rabettraff.com/"],guj-ad,a[href^="http://ad.doubleclick.net/"],div[class^="Display_displayAd"],div[id^="_vdo_ads_player_ai_"],a[href^="https://twinrdsyn.com/"],[href^="https://istlnkcl.com/"],div[id^="crt-"][style],[href^="https://go.astutelinks.com/"],a[href^="https://newbinotracs.com/"],a[href^="https://go.xlirdr.com"],a[href^="https://landing.brazzersnetwork.com/"],[name^="google_ads_iframe"],[href^="https://www.hostg.xyz/"] > img,a[href^="https://funkydaters.com/"],amp-fx-flying-carpet,[href^="https://join3.bannedsextapes.com"],[id^="ad_slider"],iframe[id^="google_ads_frame"],div[id*="MarketGid"],a[href^="http://www.friendlyduck.com/AF_"],a[href^="//go.xlviiirdr.com"],a[href^="https://refpazkjixes.top/"],div[id^="rc-widget-"],[href^="https://awbbjmp.com/"],a[href^="http://bodelen.com/"],[data-ad-width],a[data-url^="http://paid.outbrain.com/network/redir?"] + .author,a[href^="https://adsrv4k.com/"],[data-name="adaptiveConstructorAd"],[href^="https://www.mypatriotsupply.com/"] > img,a[href^="https://ovb.im/"],[href^="https://traffserve.com/"],a[href^="https://go.xxxjmp.com"],a[href^="https://awptjmp.com/"],a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"],div[data-adunit-path],a[href^="https://ismlks.com/"],a[href^="https://intenseaffiliates.com/redirect/"],[data-mobile-ad-id],a[href^="https://lobimax.com/"],a[href^="http://googleads.g.doubleclick.net/pcs/click"],a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source,a[href^="https://www.sweetdeals.com"],[href^="https://join.playboyplus.com/track/"],[href^="https://wct.link/"],a[href^="https://awentw.com/"],a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"],AMP-AD,a[href^="https://oackoubs.com/"],a[href^="https://azpresearch.club/"],div[data-spotim-slot],a[href^="https://axdsz.pro/"],a[href^="https://go.admjmp.com/"],a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img,div[id^="vuukle-ad-"],a[href^="https://clickadilla.com/"],[class^="chp_ads_block"],a[href^="https://adswick.com/"],a[href^="https://wittered-mainging.com/"],a[href^="https://go.xxxiijmp.com"],a[href^="https://click.dtiserv2.com/"],div.fadeInDown[id$="____equal"][class$="____equal"],a[href^="https://go.hpyjmp.com"],a[href^="http://https://www.get-express-vpn.com/offer/"],a[href^="https://u.expresstech.io/"],a[href^="//go.eabids.com/"],div[id^="ads300_100-widget-"],a[href^="http://allaptair.club/"],a[href^="http://bongacams.com/track?"],div[id^="div-gpt-"],[href^="https://zstacklife.com/"] img,[href^="https://www.reimageplus.com/"],a[href^="https://brightadnetwork.com/"],aside[id^="adrotate_widgets-"],[href^="https://mylead.global/stl/"] > img,a[href^="https://www.get-express-vpn.com/offer/"],a[href^="https://adserver.adreactor.com/"],a[href^="https://clk.wrenchsound.store/"],[href^="https://www.restoro.com/"],[data-css-class="dfp-inarticle"],div[data-insertion],[data-desktop-ad-id],a[href^="https://t.adating.link/"],a[href^="https://incisivetrk.cvtr.io/click?"],a[href^="//lambingsyddir.com/"],a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source,a[href^="//intorterraon.com/"],a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="],topadblock,[href^="https://mypatriotsupply.com/"] > img,a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"],div[id^="adrotate_widgets-"],[href^="http://join.shemale.xxx/"],div[id^="ads250_250-widget-"],[data-revive-zoneid],a[href^="https://natour.naughtyamerica.com/track/"],[href^="https://track.fiverr.com/visit/"] > img,[class^="div-gpt-ad"],a[href^="https://banners.livepartners.com/"],a[href^="https://go.gldrdr.com/"],a[href^="https://go.xlvirdr.com"],div[id^="ezoic-pub-ad-"],a[href^="https://go.hpyrdr.com/"],[href^="https://www.mypillow.com/"] > img,a[href^="https://go.247traffic.com/"],div[data-adname],[data-role="tile-ads-module"],a[href^="https://track.totalav.com/"],div[id^="sticky_ad_"],a[href^="https://aweptjmp.com/"],[onclick*="content.ad/"],[href^="https://freecourseweb.com/"] > .sitefriend,a[href^="https://tm-offers.gamingadult.com/"],div[jsdata*="CarouselPLA-"][data-id^="CarouselPLA-"],[id^="ad-wrap-"],a[href^="https://track.wg-aff.com"],a[href^="https://go.xlviirdr.com"],div[id^="adngin-"],a[href^="https://k2s.cc/pr/"],a[href^="https://cpmspace.com/"],a[href^="https://t.hrtye.com/"],div[id^="gpt_ad_"],a[href^="https://porntubemate.com/"],a[href^="https://go.julrdr.com/"],a[href^="http://affiliate.glbtracker.com/"],[href^="https://www.avantlink.com/click.php"] img,a[href^="https://iqbroker.com/"][href*="?aff="],[data-ez-name],a[href^="http://cam4com.go2cloud.org/aff_c?"],div[id^="div-ads-"],[data-freestar-ad],a[href^="https://cagothie.net/"],a[href^="https://see.kmisln.com/"],a[href^="https://lead1.pl/"],div[data-ad-wrapper],a[href^="http://d2.zedo.com/"],a[href^="https://www.adskeeper.com"],a[href^="https://www.mypornstarcams.com/landing/click/"],a[href^="https://taghaugh.com/"],a[href^="https://www.brazzersnetwork.com/landing/"],[href^="http://trafficare.net/"],a[href^="https://prf.hn/click/"][href*="/adref:"] > img,[href="https://jdrucker.com/gold"] > img,div[aria-label="Ads"],a[href^="https://www.financeads.net/tc.php?"],[href^="http://mypillow.com/"] > img,[href^="https://join.girlsoutwest.com/"],a[href^="https://engine.phn.doublepimp.com/"],[data-d-ad-id],article.ad,a[href^="https://a.medfoodhome.com/"],[href^="https://safer-redirection.com"],a[href^="https://go.strpjmp.com/"],img[src^="https://images.purevpnaffiliates.com"],div[data-alias="300x250 Ad 1"],a[href^="https://adnetwrk.com/"],a[href^="http://www.onclickmega.com/jump/next.php?"],a[href^="https://financeads.net/tc.php?"],div[id^="zergnet-widget"],a[href^="https://t.grtyi.com/"],[data-template-type="nativead"],a[href^="https://billing.purevpn.com/aff.php"] > img,div[data-adunit],a[href^="https://go.etoro.com/"] > img,a[href^="https://torguard.net/aff.php"] > img,div[data-ad-placeholder],display-ads,a[href^="https://fc.lc/ref/"],a[href^="https://www.geekbuying.com/dynamic-ads/"],a[href^="http://go.xtbaffiliates.com/"],a[href^="https://streamate.com/landing/click/"],a[href^="https://join.virtuallust3d.com/"],ADS-RIGHT,a[href^="https://cams.imagetwist.com/in/?track="],a[href^="https://albionsoftwares.com/"],zeus-ad,a[href^="https://a.bestcontentoperation.top/"],div[data-native-ad],[href^="http://residenceseeingstanding.com/"],div[data-dfp-id],a[href^="https://affcpatrk.com/"],a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="],a[href^="https://wantopticalfreelance.com/"],a[href^="https://1startfiledownload1.com/"],a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"],a[href^="https://ads.betfair.com/redirect.aspx?"],a[href^="http://adultfriendfinder.com/go/page/landing"],a[href^="https://ndt5.net/"],[href^="https://turtlebids.irauctions.com/"] img,[href^="https://r.kraken.com/"],a[href^="https://tour.mrskin.com/"],a[href^="https://iactrivago.ampxdirect.com/"],a[href^="https://go.xtbaffiliates.com/"],a[href^="https://chaturbate.com/in/?tour="],[data-ad-cls],a[href^="//thaudray.com/"],[class^="amp-ad-"],a[href^="https://bs.serving-sys.com"],a[href^="https://trk.softonixs.xyz/"],a[href^="https://www.googleadservices.com/pagead/aclk?"],DFP-AD,a[href^="https://traffic.bannerator.com/"],[href^="https://optimizedelite.com/"] > img,a[href^="https://adclick.g.doubleclick.net/"],a[href^="https://www.highcpmrevenuenetwork.com/"],a[href^="https://www.bet365.com/"][href*="affiliate="],a[href^="https://go.zybrdr.com"],[href^="http://join.michelle-austin.com/"],[href^="https://cpa.10kfreesilver.com/"],a[href^="https://bongacams10.com/track?"],atf-ad-slot,a[href^="//pubads.g.doubleclick.net/"],[href^="https://cipledecline.buzz/"],a[href^="https://a-ads.com/"],div[data-google-query-id],a[href^="//a.bestcontentfare.top/"],[href^="https://kingered-banctours.com/"],a[href^="https://paid.outbrain.com/network/redir?"],[href^="https://shiftnetwork.infusionsoft.com/go/"] > img,a[href^="http://www.mrskin.com/tour"],ark-top-ad,a[href^="https://www.5mno3.com/"],div[data-id-advertdfpconf],hl-adsense,a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"],a[href^="https://prf.hn/click/"][href*="/camref:"] > img,a[href^="https://bluedelivery.pro/"],div[id^="ad-position-"],a[href^="https://adjoincomprise.com/"],a[href^="//syndication.dynsrvtbg.com/"],[id^="section-ad-banner"],iframe[src^="https://pagead2.googlesyndication.com/"],a[href^="https://itubego.com/video-downloader/?affid="],[href^="http://www.mypillow.com/"] > img,a[href^="//moksoxos.com/"],a[href^="http://bc.vc/?r="],a[href^="https://www.nudeidols.com/cams/"],[data-m-ad-id],div[id*="ScriptRoot"],div[class^="kiwi-ad-wrapper"],a[href^="https://chaturbate.jjgirls.com/?track="],a[href^="https://juicyads.in/"],div[id^="dfp-ad-"],[href^="https://engine.gettopple.com/"],a[href^="https://go.goasrv.com/"],#skyscraper,[href="https://www.masstortfinancing.com/"] > img,a[href^="http://click.payserve.com/"],a[href^="https://porngames.adult/?SID="],amp-embed[type="taboola"],a[href^="http://adtrack1.club/"],a[href^="http://static.fleshlight.com/images/banners/"],a[href^="https://syndication.optimizesrv.com/"],[href^="https://go.xlrdr.com"],[href^="https://rapidgator.net/article/premium/ref/"],a[href^="https://transfer.xe.com/signup/track/redirect?"],[href^="https://www.targetingpartner.com/"],a[href^="https://black77854.com/"],a[href^="https://trk.sportsflix4k.club/"],a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"],a[href^="https://serve.awmdelivery.com/"],a[href^="https://ad.doubleclick.net/"],a[href^="https://go.markets.com/visit/?bta="],[id^="ad_sky"],[href^="https://zone.gotrackier.com/"],a[href^="https://landing1.brazzersnetwork.com"],a[href^="https://bongacams2.com/track?"],a[href^="https://cam4com.go2cloud.org/"],[href^="https://glersakr.com/"],a[href^="https://www.mrskin.com/account/"],[href^="https://goldforyourfuture.com/clk.trk"] img,a[href^="https://www.infowarsstore.com/"] > img,[href^="http://clicks.totemcash.com/"],a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="],div[id^="ad-div-"],[href="//sexcams.plus/"],a[href^="https://promo-bc.com/"] { display: none !important }</style></body>
+</html>
